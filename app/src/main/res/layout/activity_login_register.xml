@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.LoginRegisterActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/tb_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:fitsSystemWindows="true"
+        app:theme="@style/ThemeOverlay.AppCompat.ActionBar">
+
+    </android.support.v7.widget.Toolbar>
+
+    <br.com.rotaverde.rotaverde.extras.SlidingTabLayout
+        android:id="@+id/slidingTab_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tb_login_register"
+        android:layout_centerHorizontal="true"
+        android:background="@color/primary">
+
+    </br.com.rotaverde.rotaverde.extras.SlidingTabLayout>
+
+    <!-- View Pager -->
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_login_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/slidingTab_login_register"
+        android:layout_centerHorizontal="true">
+
+    </android.support.v4.view.ViewPager>
+</RelativeLayout>
